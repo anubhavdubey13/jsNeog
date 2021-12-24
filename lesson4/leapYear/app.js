@@ -7,8 +7,11 @@ var elementBirthday = document.querySelector('#bday');
 
 var elementOutput = document.querySelector('#output');
 
+
 function callback(){
     console.log('I got clicked, babes!');
+    elementGoButton.style.backgroundColor = "white";
+    elementGoButton.style.color = "blueviolet";
 
     var inputBirthday = elementBirthday.value;
     console.log(`Birth date is ${inputBirthday}`); // format: yyyy-mm-dd
@@ -23,6 +26,8 @@ function callback(){
 
 function clear(){
     elementOutput.innerText = '';
+    elementGoButton.style.backgroundColor = "blueviolet";
+    elementGoButton.style.color = "white";
 }
 elementGoButton.addEventListener('click', callback);
 elementBirthday.addEventListener('click', clear);
