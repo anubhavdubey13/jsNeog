@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark 7</title>
+    <link href='./style.css' rel='stylesheet'>
 </head>
 <body>
+    <header class='header'>
+        <h1>Write like Shakespeare</h1>
+    </header>
+    <hr>
+    <section class='container input'>
+        <h3>To be honest, I found it difficult to read his work but English teachers loved him. 
+        <br>Writeth thy assignments like Shakespeare with the holp of this translator.</h3>
+        <textarea class='inputText' placeholder="Type hither the text to beest did translate "></textarea>
+        <button id='btn-translate'>Shakesify</button>
+    </section>
+    <hr>
+    <section class='container output'>
+        <output id='output-translated'></output>
+    </section>
     
+    <script src='./app.js' type='text/javascript'></script>
 </body>
 </html>
