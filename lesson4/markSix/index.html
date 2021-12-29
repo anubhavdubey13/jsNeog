@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark 6</title>
+    <link href='./style.css' rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -13,12 +14,16 @@
 
     <section>
         <h2>Understand the sweet folks called Minions by speaking their tongue!</h2>
-        <input type='text-area' id='txt-area'
-            placeholder='Worry not! Type in English, we will translate to Banana!'>
+        <textarea id='txt-area'
+            placeholder='Worry not! Type in English, we will translate to Banana!'></textarea>
         <button id='btn-push'>Push</button>
     </section>
 
-    <output id='output'></output>
+    <h2>Translation:</h2>
+    <section class='container'>
+        <output id='output'></output>
+    </section>
+    
     
     <script src='./app.js' type='text/javascript'></script>
 </body>

@@ -27,4 +27,10 @@ function callback(){
     someAPI(newURL, inputText.value);
 }
 
+function clear(){
+    output.innerText='';
+    inputText.value = '';
+}
+
 pushButton.addEventListener('click', callback);
+inputText.addEventListener('click', clear);
