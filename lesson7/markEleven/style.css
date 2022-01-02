@@ -1,0 +1,48 @@
+html {
+    background-color: rebeccapurple;
+    color: rgb(247, 199, 247);
+}
+
+body {
+    width: 100%;
+    max-width: 25rem;
+    margin: 3rem auto;
+    border: 1px solid rgb(247, 199, 247);
+    padding: 1rem;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+}
+
+input {
+    background-color: rgb(247, 199, 247);
+    color: rebeccapurple;
+    text-align: center;
+}
+
+.birthday, .lucky, .btn {
+    text-align: center;
+    padding: 1rem;
+}
+
+.print-output {
+    text-align: center;
+}
+
+#date {
+    width: 8rem;
+    border-radius: 0.25rem;
+}
+
+#lucky-number {
+    width: 5.75rem;
+    border-radius: 0.25rem;
+}
+
+#textOutput, #btn-submit {
+    background-color:rgb(247, 199, 247);
+    color: rebeccapurple;
+    border-radius: 0.25rem;
+}
