@@ -27,5 +27,9 @@ function callback(){
     translator(shakesURL, inputText.value);
 };
 
-button.onclick = callback;
+function clear(){
+    inputText.value = '';
+};
 
+button.onclick = callback;
+inputText.onclick = clear;
