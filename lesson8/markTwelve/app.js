@@ -1,3 +1,4 @@
+// display functionality
 // Mad Angles
 var angleOne = document.querySelector('#angleOne');
 var angleTwo = document.querySelector('#angleTwo');
@@ -27,6 +28,19 @@ function callbackAngle(){
 
 angleSubmit.addEventListener('click', callbackAngle);
 
+/*
+// Quiz
+var answerQ1 = document.getElementById('option11');
+var quizSubmit = document.getElementById('quizSubmit');
+
+function callbackQuiz(){
+    console.log(answerQ1);
+    console.log('clicked');
+    console.log( answerQ1.value);
+}
+
+quizSubmit.addEventListener('click', callbackQuiz);
+*/
 // Hypotenuse
 var sideOne = document.getElementById('sideOne');
 var sideTwo = document.getElementById('sideTwo');
@@ -50,3 +64,27 @@ function callbackHypo(){
 }
 
 hypotenuseSubmit.addEventListener('click', callbackHypo);
+
+// area of triangle
+var base = document.getElementById('base');
+var height = document.getElementById('height');
+var areaSubmit = document.getElementById('areaSubmit');
+var areaOutput = document.getElementById('areaOutput');
+
+function areaTriangle(){
+    var b = Number(base.value);
+    var h = Number(height.value);
+    if (b && h){
+        var ar = 0.5*b*h;
+        return ar;
+    } else {
+        return 'Enter both fields';
+    }
+}
+
+function callbackArea(){
+    //console.log('Clicked ARea');
+    areaOutput.innerHTML = areaTriangle();
+}
+
+areaSubmit.addEventListener('click', callbackArea);

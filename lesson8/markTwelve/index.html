@@ -48,23 +48,23 @@
     <section class="container">
         <h2 id="game2">Quizz</h2>
         <div class="questionOne">
-            <p>Question 1 here</p>
-            <label for="optionOne">option 1</label>
-            <input type="radio" id="optionOne">
-            <label for="optionTwo">option 2</label>
-            <input type="radio" id="optionTwo">
-            <label for="optionThree">option 3</label>
-            <input type="radio" id="optionThree">
+            <p>Sum of angles of a triangle:</p>
+            <label for="option11">90 deg</label>
+            <input type="radio" id="option11" value='90'>
+            <label for="option12">180 deg</label>
+            <input type="radio" id="option12">
+            <label for="option13">360 deg</label>
+            <input type="radio" id="option13">
         </div>
         
         <div class="questionTwo">
-            <p>Question 2 here</p>
-            <label for="optionOne">option 1</label>
-            <input type="radio" id="optionOne">
-            <label for="optionTwo">option 2</label>
-            <input type="radio" id="optionTwo">
-            <label for="optionThree">option 3</label>
-            <input type="radio" id="optionThree">
+            <p>Area of a triangle is give by:</p>
+            <label for="option21">2*base*height</label>
+            <input type="radio" id="option21">
+            <label for="option22">base*height</label>
+            <input type="radio" id="option22">
+            <label for="option23">0.5*base*height</label>
+            <input type="radio" id="option23">
         </div>
         <button id="quizSubmit">Check!</button>
     </section>
@@ -99,6 +99,8 @@
             <input type="number" id="height">
         </div>
         <button id="areaSubmit">Area!</button>
+        <br>
+        <output id="areaOutput"></output>
     </section>
 
 </body>
