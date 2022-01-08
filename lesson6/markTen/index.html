@@ -10,18 +10,18 @@
 <body>
     <header class="header">
         <h1>cash register app</h1>
-        <p>Solution to all your change problems. Never make a return mistake again</p>
+        <p>Solution to all your change problems. Never make a mistake again</p>
     </header>
 
     <section class="input">
         <div class="billAmount">
-            <p>Bill Amount</p>
-            <label for="bill"></label>
+            <label for="bill">Bill Amount</label>
+            <br>
             <input type="number" id="bill" min="0"/>
         </div>
         <div class="cashGiven">
-            <label for="cash"></label>
-            <p>Cash Given</p>
+            <label for="cash">Cash Given</label>
+            <br>
             <input type="number" id="cash" min="0"/>
         </div>
         <button id="btn-calculate">Calculate Change</button>
@@ -29,20 +29,19 @@
     
     <section class="output">
         <div class="change">
-            <p>Change: </p>
-            <output id="change"></output>
+            Change: <output id="change"></output>
         </div>
 
         <table class="denominations">
             <tr>
                 <th>Currencies</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
+                <td class="curr">2000</td>
+                <td class="curr">500</td>
+                <td class="curr">100</td>
+                <td class="curr">20</td>
+                <td class="curr">10</td>
+                <td class="curr">5</td>
+                <td class="curr">1</td>
             </tr>
 
             <tr>
