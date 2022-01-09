@@ -28,19 +28,33 @@ function callbackAngle(){
 
 angleSubmit.addEventListener('click', callbackAngle);
 
-/*
-// Quiz
-var answerQ1 = document.getElementById('option11');
+
+// Quiz // error in the logic here. will revisit with a clear head
+var formQuiz = document.getElementById('quiz');
 var quizSubmit = document.getElementById('quizSubmit');
+var quizOutput = document.getElementById('quizOutput');
+
+var correctAnswers = ["90","bh/2"];
 
 function callbackQuiz(){
-    console.log(answerQ1);
-    console.log('clicked');
-    console.log( answerQ1.value);
+    var index=0;
+    var score=0;
+    var fD = new FormData(formQuiz);
+    //console.log(fD.values());
+    for(let value of fD.values()){
+        console.log(value);
+        console.log(fD.values().length);
+        if(value === correctAnswers[index]){
+            score += 1;
+        }
+        index += 1;
+    }
+    //console.log('clicked');
+    quizOutput.innerText = score;
 }
 
 quizSubmit.addEventListener('click', callbackQuiz);
-*/
+
 // Hypotenuse
 var sideOne = document.getElementById('sideOne');
 var sideTwo = document.getElementById('sideTwo');
