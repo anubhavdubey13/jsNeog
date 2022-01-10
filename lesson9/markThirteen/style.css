@@ -1,0 +1,53 @@
+:root{
+    --primary-color: #163D57;
+    --secondary-color: #A5AED5;
+    --border-color: #479AD1;
+}
+
+html {
+    background-color: #F9DCE1;
+}
+
+body {
+    width: 100%;
+    max-width: 30rem;
+    margin: 7rem auto;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 1rem 2rem 3rem 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.container:hover {
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+#inputBirthday {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+#submitBirthday {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+#submitBirthday:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 0.5rem;
+}
