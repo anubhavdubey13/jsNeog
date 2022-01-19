@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #7CB7DE;
+    --parentBgColor: #181E34;
+    --bgColor: #0C2231;
+    --borderColor: #1F567A;
+}
+
+html {
+    background-color: var(--parentBgColor);
+    color: var(--primary-color);
+}
+
+body {
+    width: 100%;
+    max-width: 40rem;
+    height: 100%;
+    margin: 13rem auto;
+}
+
+.sideInput, .sideOutput {
+    width: 50%;
+    height: 15rem;
+    
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    background-color: var(--bgColor);
+    border: 1px solid var(--borderColor);
+}
+
+input {
+    width: 60%;
+    margin: 0.25rem;
+}
+
+.inputs {
+    width: 18rem;
+    margin: 0 auto;
+}
+
+
+#btnSubmit {
+    margin-top: 0.35rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--parentBgColor);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+}
+
+output {
+    margin-top: 6rem;
+}
+#profitLoss {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mark 14 | p&l</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="sideInput">
+        <header class="heading">
+            <h2>Where's my Stonks?</h2>
+        </header>
+        <section class="inputs">
+            <label for="initialPrice">
+                <input type="number" id="initialPrice" min="0"
+                placeholder="Enter Initial Price">
+            </label>
+            <label for="quantityPurchased">
+                <input type="number" id="quantityPurchased" min="0"
+                placeholder="Enter Quantity Purchased">
+            </label>
+            <label for="currentPrice">
+                <input type="number" id="currentPrice" min="0"
+                placeholder="Enter Current Price">
+            </label>
+        </section>
+        <button id="btnSubmit">Find out!</button>
+    </section>
+    <section class="sideOutput">
+        <output id="profitLoss">Fingers crossed</output>
+    </section>
+</body>
+<script src="./app.js"></script>
+</html>
