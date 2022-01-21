@@ -1,4 +1,20 @@
+html {
+  background-color: #310c69;
+}
+
+textarea {
+  background-color: wheat;
+}
+
 .App {
-  font-family: sans-serif;
+  font-family: cursive;
   text-align: center;
+  margin: 5rem auto;
+  border: 2px solid wheat;
+  width: 400px;
+  color: wheat;
+}
+
+.Flags {
+  margin: 1rem 0;
 }

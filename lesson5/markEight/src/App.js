@@ -38,17 +38,19 @@ export default function App() {
       <textarea onChange={inputHandler}></textarea>
       <h3>Meaning: {inputMeaning}</h3>
       <h3> Flags:</h3>
-      {flagArray.map((item) => {
-        return (
-          <span
-            key={item}
-            onClick={() => flagClickHandler(item)}
-            style={{ fontSize: "2rem", padding: "1rem", cursor: "pointer" }}
-          >
-            {item}
-          </span>
-        );
-      })}
+      <div className="Flags">
+        {flagArray.map((item) => {
+          return (
+            <span
+              key={item}
+              onClick={() => flagClickHandler(item)}
+              style={{ fontSize: "2rem", padding: "1rem", cursor: "pointer" }}
+            >
+              {item}
+            </span>
+          );
+        })}
+      </div>
     </div>
   );
 }
