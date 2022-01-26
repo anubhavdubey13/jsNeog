@@ -2,3 +2,45 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+hr {
+  max-width: 30rem;
+  margin: 15px auto;
+}
+
+#genres {
+  border: 1px solid gray;
+  margin: 0 1rem;
+  padding: 2px 4px;
+  border-radius: 4px;
+  background-color: rgb(228, 220, 220);
+}
+
+#genres:hover {
+  background-color: black;
+  color: rgb(228, 220, 220);
+  transition: 0.4s;
+}
+
+.books {
+  border: 1px solid rgb(228, 220, 220);
+  max-width: 23rem;
+  margin: 10px auto;
+  padding: 5px 10px;
+  border-radius: 1rem;
+}
+
+.bookName {
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.bookRating {
+  color: gray;
+  padding: 10px 5px;
+}

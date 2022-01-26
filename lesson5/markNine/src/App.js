@@ -49,20 +49,20 @@ export default function App() {
       <p>Checkout my favorite books. Select a genre to get started</p>
       <div>
         {genreArr.map((item) => (
-          <span key={item} onClick={() => genreClickHandler(item)}>
+          <span id="genres" key={item} onClick={() => genreClickHandler(item)}>
             {" "}
-            {item} <br></br>
+            {item}
           </span>
         ))}
       </div>
       <hr></hr>
       {bNArray.map((book) => (
-        <ul>
+        <ul className="books">
           <span key={book}>
             <li>
-              {book}
+              <span className="bookName">{book}</span>
               <br />
-              {bookRatings[book]}
+              <span className="bookRating">{bookRatings[book]}</span>
             </li>
           </span>
         </ul>
