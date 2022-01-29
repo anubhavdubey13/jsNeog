@@ -1,31 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
 
 :root {
-    --primary-color:#85FB99;
-    --secondary-color: #1C7A2C;
+    --primary-color:#FCF0F2;
+    --secondary-color: #0F2417;
+    --parent-bg-color: #5062AA;
+    --border-color: #EAEBEB;
     font-family:  cursive;
+}
+
+html {
+    background-color: var(--parent-bg-color);
 }
 
 body {
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--primary-color);
     width: 100%;
     max-width: 60%;
+    min-height: 600px;
     margin: 0 auto;
     text-align: center;
 }
 
 ul {
     list-style-type: none;
+    font-weight: bold;
+    margin: 0 auto;
 }
 
 li {
-    display: inline;
-    padding: 0 1rem;
+    display: inline-block;
+    border: 1px solid var(--border-color);
+    padding: 0 5px;
+    border-radius: 5px;
 }
 
 a {
-    color: white;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -38,12 +49,20 @@ button {
     border-radius: 0.5rem;
     padding: 0.25rem;
     margin: 0.5rem;
-    background-color: white;
+    background-color: var(--primary-color);
     color: var(--secondary-color);
-    border: none;
+    border: 5px solid var(--border-color);
 }
 
 .container {
     margin: 1rem 2rem;
     padding: 3rem;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    max-width: 60%;
+    bottom: 8rem;
+    text-align: center;
 }
